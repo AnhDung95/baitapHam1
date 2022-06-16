@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--1.-->
+<!--<script>-->
+<!--    function alertMessage(value){-->
+<!--        return value-->
+<!--    }-->
+<!--    let result=alertMessage("Xin chao")-->
+<!--    alert(result)-->
+<!--</script>-->
+
+<!--2.-->
+<!--<script>-->
+<!--    function ham(number) {-->
+<!--        number= prompt("Nhập số:")-->
+<!--        number++-->
+<!--        alert("Hihi: "+number)-->
+<!--    }-->
+<!--ham()-->
+<!--</script>-->
+
+<!--3.-->
+<!--<script>-->
+<!--    function ham(num1,num2){-->
+<!--        num1=parseInt(prompt("Nhập số thứ nhất:"))-->
+<!--        num2=parseInt(prompt("Nhập số thứ hai:"))-->
+<!--        if (num1>=num2){-->
+<!--            num3=num1+num2-->
+<!--            alert("Tổng là: "+num3)-->
+<!--        } else if(num1<num2) {-->
+<!--            alert("ừ thì cũng đúng")-->
+<!--        }-->
+<!--    }-->
+<!--    ham()-->
+
+<!--</script>-->
+
+<script>
+    stars=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    constellation=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"]
+    function findByName(name){
+        let index=-1
+        for (let i = 0; i < stars.length; i++) {
+            if (name==stars[i]) index=i;
+        }
+        return index
+    }
+    function getResult(){
+        let name=prompt("Nhập tên ngôi sao:")
+        let index=findByName(name)
+        if (index==1){
+            alert("Tên sao không đúng")
+        } else {
+            alert("Chòm sao tương ứng là: " + constellation[index])
+        }
+    }
+getResult()
+</script>
+</body>
+</html>
